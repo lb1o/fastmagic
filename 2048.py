@@ -22,7 +22,7 @@ def add_random_tile(board):
 def move(board, direction):
     new_board = [row[:] for row in board]
     merged = [[False] * 4 for _ in range(4)]
-
+    #上
     if direction == 'up':
         for col in range(4):
             for row in range(1, 4):
